@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pranav Kumar — Portfolio</title>
+  <meta name="description" content="Pranav Kumar — Student / Frontend Developer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Site header / navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Pranav Kumar</a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/pranav-kumar-8857112a4" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="github" href="https://github.com/pranavkumar0948-pixel" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="intro">
+          <h1>Hi, I’m <span class="accent">Pranav Kumar</span>.</h1>
+          <p class="lead">CSE student at NIT Patna. I build clean, responsive web interfaces and enjoy learning new technologies.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn ghost" href="https://github.com/pranavkumar0948-pixel" target="_blank" rel="noopener">See my GitHub</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <!-- Simple profile card -->
+          <div class="profile">
+              <!-- Avatar: uses an image if available; replace the file in the project root or assets folder. -->
+              <div class="avatar">
+                <img src="channels4_profile.jpg" alt="Pranav Kumar">
+              </div>
+            <div class="profile-info">
+              <h3>Pranav Kumar</h3>
+              <p>Student • CSE • NIT Patna</p>
+              <ul class="meta">
+                <li><strong>Roll</strong> 2506062</li>
+                <li><strong>Email</strong> <a href="mailto:pranavkumar0948@gmail.com">pranavkumar0948@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="about-text">I am a Computer Science student at NIT Patna with interests in web development and software engineering. I enjoy working on front-end interfaces, learning modern CSS techniques, and writing clean, accessible code.</p>
+        <div class="about-cards">
+          <div class="card">
+            <h4>College</h4>
+            <p>NIT Patna</p>
+          </div>
+          <div class="card">
+            <h4>Branch</h4>
+            <p>CSE</p>
+          </div>
+          <div class="card">
+            <h4>Roll No.</h4>
+            <p>2506062</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="muted">A few technologies and areas I work with.</p>
+        <div class="skills-grid">
+          <!-- Each .skill is a card with hover effects -->
+          <div class="skill">Programming C</div>
+          <div class="skill">Java</div>
+          <div class="skill">Web Development</div>
+          <div class="skill">HTML &amp; CSS</div>
+          <div class="skill">JavaScript (Vanilla)</div>
+          <div class="skill">Responsive Design</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Feel free to reach out — I’d love to connect.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Send a message</h3>
+            <!-- Simple contact form — handled in script.js to open mail client -->
+            <form id="contact-form">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Hi Pranav, ..." required></textarea>
+
+              <button class="btn primary" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact info</h3>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:pranavkumar0948@gmail.com">pranavkumar0948@gmail.com</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/pranavkumar0948-pixel" target="_blank" rel="noopener">/pranavkumar0948-pixel</a></li>
+            </ul>
+            <p class="muted small">Or connect on LinkedIn (optional) — add your link to the page to show it here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Pranav Kumar — Built with HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
